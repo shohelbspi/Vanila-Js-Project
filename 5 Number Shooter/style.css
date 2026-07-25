@@ -1,0 +1,42 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: brown;
+    padding: 10px 20px;
+    color: white;
+    font-size: 25px;
+}
+
+.numberContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    max-width: 60rem;
+    margin: auto;
+    padding: 40px;
+}
+
+.circle{
+    width: 60px;
+    height: 56px;
+    background-color: rgb(216, 43, 43);
+    border-radius: 100%;
+    color: white;
+    display: grid;
+    place-content: center;
+    font-size: 23px;
+}
