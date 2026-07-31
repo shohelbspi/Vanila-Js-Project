@@ -1,0 +1,183 @@
+/* Google Font ইমপোর্ট (আধুনিক ও ক্লিন দেখানোর জন্য) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #0f172a;
+    /* ডিপ ডার্ক ব্লু-গ্রে ব্যাকগ্রাউন্ড */
+    color: #f8fafc;
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+/* সেন্ট্রাল কন্টেইনার */
+.container {
+    width: 90%;
+    max-width: 42rem;
+    margin: 0 auto;
+    padding: 2rem;
+    background: rgba(30, 41, 59, 0.7);
+    /* স্মুথ কার্ড ব্যাকগ্রাউন্ড */
+    backdrop-filter: blur(10px);
+    /* গ্লাস গ্লো ইফেক্ট */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 8px 10px -6px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    height: fit-content;
+}
+
+/* হেডার সেকশন */
+/* হেডার সেকশন - ব্যাকগ্রাউন্ড কালার ও স্টাইলিং সহ */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #1e293b;
+    padding: 1rem 1.25rem;
+    border-radius: 12px;
+    border: 1px solid #334155;
+    margin-bottom: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 100%;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+}
+h1 {
+    font-size: 1.875rem;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    background: linear-gradient(135deg, #38bdf8, #818cf8);
+    /* গ্রেডিয়েন্ট টেক্সট */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* ইনপুট বক্স ও বাটন কন্টেইনার */
+.inputContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.75rem;
+}
+
+#taskInput {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    border: 1px solid #334155;
+    background-color: #0f172a;
+    color: #f8fafc;
+    font-size: 0.95rem;
+    outline: none;
+    transition: all 0.2s ease;
+}
+input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    border: 1px solid #334155;
+    background-color: #0f172a;
+    color: #f8fafc;
+    font-size: 0.95rem;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+#taskInput:focus {
+    border-color: #38bdf8;
+    box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.2);
+}
+
+#taskInput::placeholder {
+    color: #64748b;
+}
+
+/* অ্যাড বাটন */
+.addBtn {
+    padding: 0.75rem 1.25rem;
+    border-radius: 8px;
+    border: none;
+    background: linear-gradient(135deg, #0284c7, #2563eb);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.1s ease, opacity 0.2s ease;
+    white-space: nowrap;
+}
+
+.addBtn:hover {
+    opacity: 0.9;
+}
+
+.addBtn:active {
+    transform: scale(0.97);
+}
+
+/* টুডু লিস্টের কন্টেইনার */
+.todoContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+/* প্রতিটি টুডু আইটেম */
+.todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    padding: 1rem 1.25rem;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+}
+
+.todo:hover {
+    border-color: #475569;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* টুডুর ভিতরের বাটন (যেমন: Delete/Complete) */
+.todo button {
+    padding: 0.5rem 0.85rem;
+    border-radius: 6px;
+    border: none;
+    background-color: #ef4444;
+    /* একশন লাল বাটন */
+    color: white;
+    font-weight: 500;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.todo button:hover {
+    background-color: #dc2626;
+}
+
+.todo button:active {
+    transform: scale(0.95);
+}
+
+.saveBtn{
+    display: none;
+}
+
+.buttonContainer{
+    display: flex;
+    gap: 1rem;
+
+}
